@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x, y;
+  int z =0;
+  cout<< " Lets calculate the sum of integers in the range you provide " <<endl;
+  cout<< "Introduce the lower bound " <<endl;
+  cin>>x;
+  cout<< " Introduce the upper bound " <<endl;
+  cin>>y;
+
+  while (x<=y) {
+    z = z + x;
+    x++;
+  }
+  cout<<"The sum from "<<x; cout<<" to "<<y; cout<<" (inclusive) is: "<<(x+z) <<endl;
+  return 0;
+}
