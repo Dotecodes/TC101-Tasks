@@ -1,0 +1,26 @@
+// Miguel Sandoval
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int sumsquares(vector<int>list){
+  int result=0;
+  for(int i=0; i<list.size(); i++){
+    result= result+list[i]*list[i];
+  }
+  return result;
+}
+
+int main(){
+  vector <int>list;
+  int number;
+  cout<<"Write the numbers for the sum of squares, write 0 when you finish: "<<endl;
+  cin>>number;
+while (number!=0){
+  list.push_back(number);
+  cin>>number;
+}
+  cout<<"Result: "<<sumsquares(list)<<endl;
+  return 0;
+}
