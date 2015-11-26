@@ -1,0 +1,23 @@
+#include <iostream> // Miguel Sandoval
+using namespace std;
+
+float babyl (float x)
+{
+  float a = x;
+  float b = 1;
+  float ac = 0.00001;
+  while(a - b > ac)
+  {
+    a = (a + b)/2;
+    b = x/a;
+  }
+  return a;
+}
+int main ()
+{
+  float x;
+  cout << "Enter the number from which you want the square: ";
+  cin >> x;
+  cout << "√"<<x<<" = " << babyl(x) << endl;
+  return 0;
+}
